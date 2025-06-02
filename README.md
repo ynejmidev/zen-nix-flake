@@ -5,6 +5,7 @@ A home-manager module for the Zen Browser, using home manager's mkFirefoxModule.
 ## usage
 
 - add this to your flake inputs since no browser extensions are distributed through nixpkgs (optional):
+
 ``` nix
     firefox-addons = {
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
@@ -12,6 +13,7 @@ A home-manager module for the Zen Browser, using home manager's mkFirefoxModule.
     };
 ```
 - add an overlay to nixpkgs like this (`mkFirefoxModule` looks for the given package name `zen-browser` inside `pkgs`):
+
 ``` nix
 nixpkgs.overlays =
   [
@@ -21,8 +23,8 @@ nixpkgs.overlays =
 ```
 
 - configure exactly the same as the firefox (and friends) modules in home-manager
-
 eg:
+
 ```nix
 programs.zen-browser = {
     enable = true;
