@@ -34,7 +34,7 @@ programs.zen-browser = {
                 "zen.widget.linux.transparency" = true;
                 "browser.tabs.allow_transparent_browser" = true;
             };
-            search.engine.default = "ddg";
+            search.default = "ddg";
             extensions = {
                 packages = with pkgs.firefox-addons; [
                    ublock-origin
