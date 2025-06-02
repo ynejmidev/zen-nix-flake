@@ -60,3 +60,8 @@ programs.zen-browser = {
 };
 ```
 
+## todo
+``trace: using non-memoized system wasm32-wasi
+trace: using non-memoized system i686-linux``
+on a x86_64-linux, it builds successfully..
+
