@@ -19,7 +19,11 @@ nixpkgs.overlays =
   [
     inputs.zen-browser.overlays.default
   ];
+```
+- import home module
 
+``` nix
+  imports = [ inputs.zen-browser.homeModules.default ];
 ```
 
 - configure exactly the same as the firefox (and friends) modules in home-manager
